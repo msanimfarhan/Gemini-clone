@@ -28,8 +28,9 @@ import {
       ],
     });
   
-    const result = await chatSession.sendMessage("promt");
+    const result = await chatSession.sendMessage(promt);
     console.log(result.response.text());
+    return  result.response.text();
   }
   
   export default run;
